@@ -14,3 +14,12 @@ ssh -T git@github.com
 # push repo with ssh key
 git push
 ```
+## Change remote url to github
+```bash
+git remote add robotrainer_github git@github.com:RoboTrainerAID/ati_force_torque.git
+
+git push -u robotrainer_github
+
+# check if default is correctly set
+git branch -vv
+```
