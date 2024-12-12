@@ -19,9 +19,9 @@ Robotrainer is a robot for a neuromuscular training. It's a three wheeled walker
 ## How To RoboTrainer
 
 - [How to start](docs/How_to_start.md)
-- [General useful commands](/docs/Bringup_1.md)
-- [Push a repo to GitHub](/docs/Git_Sync_1.md)
-- [IPs and passwords](/docs/IPs_and_Passwords_1.md)
+- [General useful commands](Bringup.md)
+- [Push a repo to GitHub](Git_Sync.md)
+- [IPs and passwords](IPs_and_Passwords.md)
 
 ## Applications
 
@@ -29,13 +29,13 @@ Robotrainer is a robot for a neuromuscular training. It's a three wheeled walker
 
 ## Components
 
-- [Controllers](/docs/Controllers_1.md)
-- [Laserscanner](/docs/Laserscanner_1.md)
+- [Controllers](Controllers.md)
+- [Laserscanner](Laserscanner.md)
 
 
 ## Troubleshooting
 
-- 
+- [Troubleshooting](Troubleshooting.md)
 
 ## MS Teams
 

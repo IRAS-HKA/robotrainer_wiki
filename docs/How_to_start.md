@@ -76,3 +76,14 @@
    ```bash
    rt2_recover
    ```
+
+
+## How to stop
+1. shutdown onBoard pc
+```bash
+sudo shutdown
+# pw robotrainer
+```
+2. Wait for pc light to turn off
+3. Turn right key to OFF
+4. Unplug power supply
