@@ -31,7 +31,7 @@
 4. Connect to WiFi IRAS-RobotLab
    - PW: AllRobotsAreWelcome!
 5. Open VSCode remote window and select robotrainer_iras
-6. Open folder `/home/robotrainer/workspace/ros_ws_melodic_robotrainer/`
+6. Open folder `/home/robotrainer/workspace/ros_ws_melodic_robotrainer/src`
 
 ### Launch Software
 

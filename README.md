@@ -22,7 +22,7 @@ RoboTrainer is a robot for a neuromuscular training. It's a three wheeled walker
 - [IPs and passwords](IPs_and_Passwords.md)
 
 ## Applications
--
+- [Training](Training.md)
 
 ## Components
 - [Controllers](Controllers.md)
