@@ -6,15 +6,6 @@ roslaunch za_experimental rt2.launch
 rt2_init
 ```
 
-## Mapping
-```bash
-roslaunch robotrainer_bringup rt2_mapping.launch
-
-# Save generated files to path:
-cd ~/workspace/ros_ws_melodic_robotrainer/src/cob_environments/cob_default_env_config/iras
-rosrun map_server map_saver -f map
-```
-
 ## How to start controller parameterization
 ```bash
 roslaunch za_experimental rqt_reconfigure.launch
@@ -33,13 +24,15 @@ roslaunch za_experimental rqt_reconfigure.launch
 # Start panel and data_srv
 roslaunch robotrainer_panel robotrainer.launch
 ```
-- Go to "Data Service" Tab and click "Load to Active"
-	- path: /robotrainer_control/robotrainer_data_service/yamls/test.yaml
+1. Go to "Data Service" Tab and click "Load to Active"
+	- path: /robotrainer_control/robotrainer_data_service/yamls/iras_demo.yaml
 	- or path: /robotrainer_control/robotrainer_parameters/yamls/XX.yaml
 ```bash
 # Start rqt reconfigure
 roslaunch za_experimental rqt_reconfigure.launch
 ```
-- In "FTSBaseController/RobotrainerControlActions"
-- **Be sure that RoboTrainer is not standing inside a control area, otherwise it will start moving**
-- tick apply_control_actions
+1. In  "FTSBaseController/RobotrainerControlActions"
+2. **Be sure that RoboTrainer is not standing inside a control area, otherwise it will start moving**
+3. switch on tab "Spatial_control_actions"
+4. select "spatial_control_action_type: modalities_controller (2)"
+5. tick apply_control_actions

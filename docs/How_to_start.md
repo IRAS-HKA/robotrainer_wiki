@@ -64,11 +64,6 @@
    rt2_init
    ```
 
-7. Recover drivers from emergency:
-   ```bash
-   rt2_recover
-   ```
-
 ### Drive with RoboTrainer
 1. Unlock remote emergency stop
 2. Confirm safety by turning right key to "ON"

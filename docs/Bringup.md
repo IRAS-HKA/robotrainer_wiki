@@ -25,11 +25,33 @@ rqt
 - `D`or `X`mode is DirectInput or XInput. XInput is newer protocol and should always be used
 - `Mode` switches left DPad with left controller
 
-## Launch files
-```bash
-# Rviz Control Actions editor
-roslaunch robotrainer_panel robotrainer.launch
 
-# Rqt SR2 dashboard
-roslaunch sr2_dashboard sr2_dashboard_new.launch
+## Mapping
+```bash
+srt
+# Start mapping with continous rotation
+roslaunch robotrainer_bringup rt2_mapping.launch
+rt2_init
+
+# For visualizing the mapping process
+roslaunch za_experimental rviz.launch
+
+# Save generated files to path:
+cd ~/workspace/ros_ws_melodic_robotrainer/src/cob_environments/cob_default_env_config/iras
+rosrun map_server map_saver -f map
+```
+
+## Transport 
+- Put RoboTrainer in Hadrwareconfiguration
+	- angular 1, linear 1 -> beides ganz nach innen
+- Without srt
+```bash
+rt2_transport
+rt2_init # Sollte eigentlich auch mit RB+Start funktionieren
+```
+
+## Get battery state
+
+```bash
+rostopic echo /power_state
 ```
