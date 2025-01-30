@@ -36,15 +36,57 @@ roslaunch za_experimental rqt_reconfigure.launch
 3. switch on tab "Spatial_control_actions"
 4. select "spatial_control_action_type: modalities_controller (2)"
 5. tick apply_control_actions
+6. Nur EINMAL nach controller starten notwendig
 
 
 ## Troubleshooting
+
+### Video
+- area_counterforce
+	- ERROR: es wird immer invert_rotation von davor geladen
+		- evtl wird invert_rotation nicht richtig zurückgesetzt?
+	- WORKS wenn controller neu gestartet wurden
+		- rqt_reconfigure settings
+			- Area_counterforce
+				- counterforce_area_scaledown_dist: no idea
+				- area_counterforce_x: max
+				- area_counterforce_y: max
+				- area_counterforce_torque_rot: max
+	- recorded
+		- no reaction
+		- with reaction
+- area_doublespeed
+	- ERROR: es wird immer invert_rotation von davor geladen
+		- evtl wird invert_rotation nicht richtig zurückgesetzt?
+	- recorded
+		- no reaction
+		- with reaction
+- area_rotation
+	- WORKS
+	- recorded
+		- no reaction
+		- with reaction
+- force
+	- WORKS
+	- recorded
+		- no reaction
+		- with reaction
+- section_tracking
+	- ERROR funktioniert nicht
+		- evtl muss robotrainer_deviation dabei laufen
+		- `roslaunch robotrainer_deviation robotrainer_deviation.launch`
+- wall
+	- ERROR komische fehler mit position der Wände
+		- Evtl werden die daten falsch geladen
+	- WORKS wenn controller neu geladen
+	- recorded
+
 ### Why is the area modality not working?
 - there are different spatial_control_action_types
 	- none (0)
 	- modalities (1)
 	- modalities_controllers (2)
-- Areas are only available withe the modalities (1) selection
+- Areas are only available with the modalities (1) selection
 - [ ] Warum waren die anderen Modalities auskommentiert für die RoSy study? Es muss doch einen Grund gehabt haben
 - [ ] Was ist der unterschied zwischen den spatial_control_action_types: modalities (1) und modalities_controller(2)? Werden gesetzt über rqt_reconfigure.
 - Here is the respective code for that:
