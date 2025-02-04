@@ -52,25 +52,13 @@ roslaunch za_experimental rqt_reconfigure.launch
 				- area_counterforce_x: max
 				- area_counterforce_y: max
 				- area_counterforce_torque_rot: max
-	- recorded
-		- no reaction
-		- with reaction
 - area_doublespeed
 	- ERROR: es wird immer invert_rotation von davor geladen
 		- evtl wird invert_rotation nicht richtig zurückgesetzt?
-	- recorded
-		- no reaction
-		- with reaction
 - area_rotation
 	- WORKS
-	- recorded
-		- no reaction
-		- with reaction
 - force
 	- WORKS
-	- recorded
-		- no reaction
-		- with reaction
 - section_tracking
 	- ERROR funktioniert nicht
 		- evtl muss robotrainer_deviation dabei laufen
@@ -79,7 +67,6 @@ roslaunch za_experimental rqt_reconfigure.launch
 	- ERROR komische fehler mit position der Wände
 		- Evtl werden die daten falsch geladen
 	- WORKS wenn controller neu geladen
-	- recorded
 
 ### Why is the area modality not working?
 - there are different spatial_control_action_types
