@@ -17,20 +17,20 @@ RoboTrainer is a robot for a neuromuscular training. It's a three wheeled walker
 
 ## How To RoboTrainer
 - [How to start](docs/How_to_start.md)
-- [General useful commands](Bringup.md)
-- [Push a repo to GitHub](Git_Sync.md)
-- [IPs and passwords](IPs_and_Passwords.md)
+- [General useful commands](docs/Bringup.md)
+- [Push a repo to GitHub](docs/Git_Sync.md)
+- [IPs and passwords](docs/IPs_and_Passwords.md)
 
 ## Applications
-- [Training](Training.md)
+- [Training](docs/Training.md)
 
 ## Components
-- [Controllers](Controllers.md)
-- [Laserscanner](Laserscanner.md)
+- [Controllers](docs/Controllers.md)
+- [Laserscanner](docs/Laserscanner.md)
 - [3D-Printer Models (Teams)]([CAD](https://hskarlsruhede.sharepoint.com/:f:/t/RoboTrainer/ErGFJ2ZP0x1BmJyGOS3MACIBBvAYO5EO7jxPJmqotC6emA?e=kbD9rB))
 
 ## Troubleshooting
-- [Troubleshooting](Troubleshooting.md)
+- [Troubleshooting](docs/Troubleshooting.md)
 
 ## Collaboration
 - [RoboTrainer Team](https://hskarlsruhede.sharepoint.com/:f:/t/RoboTrainer/EsiCfV06BGpJitmgvy-oqk4Bn9q0lgA7ABGk0bIJfQHtZQ?e=a6dlWu)
