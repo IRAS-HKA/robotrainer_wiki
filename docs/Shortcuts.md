@@ -29,5 +29,6 @@ alias rt2_init="rosservice call /base/driver/init"
 alias rt2_recover="rosservice call /base/driver/recover"
 alias rt2_git_change_user="source `rospack find za_experimental`/scripts/git_change_user.bash"
 alias rt2_git_fetch_all=". `rospack find za_experimental`/scripts/git_fetch_all.bash"
+alias rt2_battery="`rospack find za_experimental`/scripts/get_battery_charge.bash"
 
 ```

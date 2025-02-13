@@ -34,18 +34,18 @@ roslaunch za_experimental rqt_reconfigure.launch
 1. In  "FTSBaseController/RobotrainerControlActions"
 2. **Be sure that RoboTrainer is not standing inside a control area, otherwise it will start moving**
 3. switch on tab "Spatial_control_actions"
-4. select "spatial_control_action_type: modalities_controller (2)"
+4. select "spatial_control_action_type: modalities (1)"
 5. tick apply_control_actions
 6. Nur EINMAL nach controller starten notwendig
+7. Turn on (up) the physical metal switch for the laser dot on the ground
 
 
 ## Troubleshooting
 
 ### Video
 - area_counterforce
-	- ERROR: es wird immer invert_rotation von davor geladen
-		- evtl wird invert_rotation nicht richtig zurückgesetzt?
-	- WORKS wenn controller neu gestartet wurden
+	- WORKS
+		- [ ] Set and load default parameters for counterforce 
 		- rqt_reconfigure settings
 			- Area_counterforce
 				- counterforce_area_scaledown_dist: no idea
@@ -53,8 +53,7 @@ roslaunch za_experimental rqt_reconfigure.launch
 				- area_counterforce_y: max
 				- area_counterforce_torque_rot: max
 - area_doublespeed
-	- ERROR: es wird immer invert_rotation von davor geladen
-		- evtl wird invert_rotation nicht richtig zurückgesetzt?
+	- WORKS
 - area_rotation
 	- WORKS
 - force
@@ -66,6 +65,8 @@ roslaunch za_experimental rqt_reconfigure.launch
 - wall
 	- ERROR komische fehler mit position der Wände
 		- Evtl werden die daten falsch geladen
+		- datei wird falsch gespeichert oder liste der wände nicht gecleant.
+		- führt zu: wall_names: [wall_3, wall_4, wall_3, wall_4, wall_5, wall_6]
 	- WORKS wenn controller neu geladen
 
 ### Why is the area modality not working?
