@@ -17,4 +17,4 @@
 | stogl                |               |                |                      |                   |
 |                      |               |                |                      |                   |
 | **Polar OH1**        |               |                |                      |                   |
-| az@gmail.com         |               | flow.polar.com | robotrainer2025      |                   |
+| az(at)gmail.com      |               | flow.polar.com | robotrainer2025      |                   |
